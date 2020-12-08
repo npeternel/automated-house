@@ -1,0 +1,116 @@
+body {
+  font-family: 'Verdana', monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#house {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.control-btns {
+  display: flex;
+  justify-content: center;
+  padding-top: 1vw;
+  border-top: 2px solid brown;
+}
+
+.control-btn-container {
+  width: 30%;
+  height: 75%;
+  text-align: center;
+}
+
+.control-btn {
+  background-color: white;
+  border-color: black;
+  border-radius: 5%;
+  outline: none;
+  font-size: 1.5vw;
+}
+
+.control-btn:hover {
+  cursor: pointer;
+}
+
+.elements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.elements>div {
+  width: 30%;
+}
+
+.room {
+  border: 3px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.room span {
+  text-align: center;
+  margin: 5px auto;
+  font-size: 1.5vw;
+}
+
+.curtain-container {
+  max-width: 33%;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-curtain, .right-curtain {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.left-curtain div, .right-curtain div {
+  position: relative;
+  text-align: center;
+}
+
+.light-container img {
+  border-radius: 50%;
+}
+
+.light {
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -ms-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+}
+
+.temperature-container {
+  width: 30%;
+  height: 30%;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.temperature {
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.temp-knob {
+  background-color: transparent;
+}
+
+.credit {
+  position: fixed;
+  bottom: 0;
+}
