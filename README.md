@@ -25,9 +25,11 @@ Each control object must implement 2 methods that are both called during the app
 
 ```js
 var MyControl = {
-  // returns an array of any visual HTML elements to initialize in the room, e.g. an array of divs containing the window and curtains
+  // returns an array of any visual HTML elements to initialize in the room
+  // e.g. an array of divs containing the window and curtains
   elements: function(room) {...},
-  // returns an HTML element the user interacts with to change a control, e.g. a button serving as the light switch
+  // returns an HTML element the user interacts with to change a control
+  // e.g. a button serving as the light switch
   button: function(room) {...}
 }
 ```
@@ -49,7 +51,7 @@ var Controls = [
 and in a script tag in the head of `index.html` 
 
 ```html
-  <script src="js/mycontrol.js"></script>
+  <script src="js/controls/mycontrol.js"></script>
 ```
 
 Run using a local http server, such as `python3 -m http.server`
